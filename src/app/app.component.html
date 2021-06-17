@@ -1,0 +1,35 @@
+<div *ngFor="let item of arrCList">
+{{arrCList[0] | json}}
+</div>
+
+<div class="container" *ngIf="arrCList">
+  <div id="accordion">        
+    <h5 class="mb-0 d-inline">
+      <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseZone" aria-expanded="true" aria-controls="collapseZone">
+        India
+      </button>
+    </h5>
+    <div id="collapseZone" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <ul id="main-wrapper">
+        <li>
+            <a href="#" data-toggle="collapse" data-target="#collapseOneA">North</a>
+            <div class="collapse show" data-parent="#main-wrapper" id="collapseOneA">
+                <ul class="states">
+                    <li><a href="#">J&amp;K</a></li>
+                    <li><a href="#">Punjab</a></li>
+                </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#collapseOneB">South</a>
+            <div class="collapse show" data-parent="#main-wrapper" id="collapseOneB">
+                <ul class="states">
+                    <li><a href="#">J&amp;K</a></li>
+                    <li><a href="#">Punjab</a></li>
+                </ul>
+            </div>
+          </li>
+       </ul>
+    </div>
+ </div>
+</div>
