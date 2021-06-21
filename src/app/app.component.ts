@@ -13,13 +13,13 @@ export class AppComponent {
 
   constructor (private httpService: HttpClient){ }
 
-  arrCList: string[] = [];
+  arrCList: any[] = [];
 
   ngOnInit(){
     this.httpService.get('./assets/sample_node_tree_data.txt').subscribe(
       data => {
-        this.arrCList = data as string []; // FILL THE ARRAY WITH DATA.
-        console.log(this.arrCList[1]);
+        this.arrCList = data as string [];
+        console.log(this.arrCList);
       },
 
       (err: HttpErrorResponse) => {
