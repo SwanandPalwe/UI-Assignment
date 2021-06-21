@@ -1,8 +1,9 @@
-<div *ngFor="let item of arrCList">
-{{arrCList[0] | json}}
+<div>
+{{arrCList | json}}
 </div>
 
-<div class="container" *ngIf="arrCList">
+<h1> Statically added </h1>
+<div class="container">
   <div id="accordion">        
     <h5 class="mb-0 d-inline">
       <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseZone" aria-expanded="true" aria-controls="collapseZone">
